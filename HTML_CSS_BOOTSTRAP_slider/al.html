@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+    <style>
+        body{
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/010/654/557/small_2x/light-blue-texture-with-colored-lines-template-for-your-beautiful-backgrounds-free-vector.jpg');
+        }
+        .image-slider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 9rem;
+        }
+
+        .image-slider .image-container {
+            flex: 1;
+            margin-right: 20px;
+            
+        }
+
+        .image-slider .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 2rem;
+        }
+
+        .image-slider .info-container {
+            flex: 1;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 2rem;
+        }
+
+        .image-slider .info-container h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .image-slider .info-container p {
+            font-size: 16px;
+        }
+
+        .text-center{
+            margin-left: 27rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-slider">
+            <div class="image-container">
+                <img src="https://img.freepik.com/premium-photo/group-happy-young-students-university_85574-4531.jpg?w=2000"
+                    alt="Image 1">
+            </div>
+            <div class="info-container">
+                <h2>Image 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <button id="previousBtn" class="btn btn-light me-2"> < </button>
+            <button id="nextBtn" class="btn btn-light"> > </button>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Image data
+        const images = [
+            {
+                src: 'https://img.freepik.com/premium-photo/group-happy-young-students-university_85574-4531.jpg?w=2000',
+                title: 'Achivements of Blacksheep-1',
+                description: 'Many celebrities including Kamal Hassan, Silambarasan TR, Siva Karthikeyan, Madhavan, Gv Prakash, Bharathiraja, Vetrimaran , LokeshKanagaraj, Arjun Das, Sudha Kongara, Aishwarya Rajesh, Senthil,Nakkheeran Gopal , Ambika, Rekha and many more Youtubers and Television Celebrities became a part of this ceremony'
+            },
+            {
+                src: "https://monitor.icef.com/wp-content/uploads/2020/08/study-benchmarks-global-student-group-travel-market.png",
+                title: 'Achivements of Blacksheep-2',
+                description: 'Many celebrities including Kamal Hassan, Silambarasan TR, Siva Karthikeyan, Madhavan, Gv Prakash, Bharathiraja, Vetrimaran , LokeshKanagaraj, Arjun Das, Sudha Kongara, Aishwarya Rajesh, Senthil,Nakkheeran Gopal , Ambika, Rekha and many more Youtubers and Television Celebrities became a part of this ceremony'
+            },
+            {
+                src: 'https://previews.123rf.com/images/olegdudko/olegdudko1507/olegdudko150714088/42687222-student-university-college-student.jpg',
+                title: 'Achivements of Blacksheep-3',
+                description: 'Many celebrities including Kamal Hassan, Silambarasan TR, Siva Karthikeyan, Madhavan, Gv Prakash, Bharathiraja, Vetrimaran , LokeshKanagaraj, Arjun Das, Sudha Kongara, Aishwarya Rajesh, Senthil,Nakkheeran Gopal , Ambika, Rekha and many more Youtubers and Television Celebrities became a part of this ceremony'
+            }
+        ];
+
+        // Variables
+        const imageContainer = document.querySelector('.image-container img');
+        const infoContainer = document.querySelector('.info-container');
+        const previousBtn = document.getElementById('previousBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentIndex = 0;
+
+        // Function to update the image and information
+        function updateImageAndInfo() {
+            const currentImage = images[currentIndex];
+            imageContainer.src = currentImage.src;
+            infoContainer.querySelector('h2').textContent = currentImage.title;
+            infoContainer.querySelector('p').textContent = currentImage.description;
+        }
+
+        // Event listeners for next and previous buttons
+        nextBtn.addEventListener('click', function () {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateImageAndInfo();
+        });
+
+        previousBtn.addEventListener('click', function () {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateImageAndInfo();
+        });
+
+        // Initial setup
+        updateImageAndInfo();
+    </script>
+</body>
+
+</html>
