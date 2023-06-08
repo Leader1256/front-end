@@ -1,0 +1,27 @@
+.exper{
+    width:150px;
+    height:150px;
+    border: 1px solid red;
+    background-color: white;
+    border-radius: 2rem;
+}
+.container{
+    border: 2px solid green;
+    width:350px;
+    height:350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 12rem;
+    background-color: rgb(189, 36, 61);
+    border-radius: 2rem;
+}
+.lead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    margin: 10px;
+}

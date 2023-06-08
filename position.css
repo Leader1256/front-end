@@ -1,0 +1,39 @@
+.container{
+    background-color: aqua;
+    height:46rem;
+    /* display: flex;
+    justify-content: space-around; */
+    margin:1rem;
+}
+
+.item{
+    background-color: brown;
+    border: 2px solid black;
+    width:6rem;
+    height: 6rem;
+    
+}
+.item1{
+    position:relative;
+    left: 80%;
+
+}
+.item2{
+    position:absolute;
+    left:40%;
+    bottom:50%;
+}
+.item3{
+    position: fixed;
+    left:20%;
+}
+
+.item4{
+    position:sticky;
+    left:20%;
+}
+.item5{
+    position:static;
+    left:50%;
+}
+

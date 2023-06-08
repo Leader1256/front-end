@@ -1,0 +1,51 @@
+.c1{
+     border:1px solid black;
+     width: 12rem;
+     height: 2rem;
+     background-color: blue;
+     animation-name: dancing;
+     animation-duration: 10s;
+     animation-iteration-count: infinite;
+}
+.c2{
+    border:1px solid black;
+    width: 12rem;
+    height: 2rem;
+    background-color: orange;
+    animation-name: dancing1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.c3{
+    border:1px solid black;
+    width: 12rem;
+    height: 2rem;
+    background-color: blueviolet;
+    animation-name: dancing2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes dancing {
+    from{
+        width:12rem;
+    }
+    to{
+        width:28rem;
+    }
+}
+@keyframes dancing1{
+    from{
+        width:12rem;
+    }
+    to{
+        width:34rem;
+    }
+}
+@keyframes dancing2{
+    from{
+        width:12rem;
+    }
+    to{
+        width:22rem;
+    }
+}

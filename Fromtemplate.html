@@ -1,0 +1,98 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <fieldset>
+        <legend><h1>Form element</h1></legend>
+    <header></header>
+    <main>
+        <form action="frominfo.html" method="POST">
+         <div>
+            <label for="name">Name :</label>
+            <input type="text" id="name" placeholder="enter your name" maxlength="20" name="name" />
+         </div>
+         <br>
+         <div>
+            <label for="Email">Email :</label>
+            <input type="Email" id="Email" placeholder="enter email" min="8" max="255" name="Email" />
+         </div>
+         <br>
+         <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="enter min 8 length password "name="password" />
+         </div>
+         <br>
+         <div>
+            <label for="gender">gender:</label>
+            
+            <input type="radio" id="male" name="gender" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" />
+            <label for="female">Female</label>
+         </div>
+         <br>
+         <div>
+            <label for="car">favourite Car:</label>
+            
+            <input type="checkbox" id="checkbox" name="checkbox" />
+            <label for="checkbox">Mercedez</label>
+            <input type="checkbox" id="checkbox" name="checkbox" />
+            <label for="checkbox">Audi</label>
+            <input type="checkbox" id="checkbox" name="checkbox" />
+            <label for="checkbox">fortuner</label>
+         </div>
+         <br>
+         <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" />
+         </div>
+         <br>
+         <div>
+            <label for="datetime">Date and time:</label>
+            <input type="datetime" id="datetime" name="datetime" />
+         </div>
+         <br>
+         <div>
+            <label for="datetime">Date and time:</label>
+            <input type="datetime-local" id="datetime" name="datetime" />
+         </div>
+         <br>
+         <div>
+            <label for="datetime">Week:</label>
+            <input type="week" id="datetime" name="datetime" />
+         </div>
+         <br>
+         <div>
+            <label for="color">favourite color:</label>
+            <input type="color" id="color" name="color" />
+         </div>
+         <br>
+         <div>
+            <label for="range">Enter range:</label>
+            <input type="range" id="range" name="range" />
+         </div>
+         <br>
+         <div>
+           
+            <input type="button"  value="button"  >
+            
+            
+                <input type="reset" id="reset" name="reser" />
+
+                <button >Button</button>
+            
+
+         </div>
+         <br>
+        </fieldset>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+.container{
+    background-color: rgb(115, 141, 132);
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Wordcount{
+    border-style: none;
+    width:12rem;
+    height:3rem;
+    margin-top: 2rem;
+    
+}
+.counter{
+    background-color: aliceblue;
+    display :flex;
+    flex-direction: column;
+    align-items: center;
+    width:10rem;
+    height:6rem;
+     margin-top: 2rem;
+}
+.contain{
+    background-color: antiquewhite;
+    width:25rem;
+    height:25rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    position: absolute;
+    top: 12rem; 
+}

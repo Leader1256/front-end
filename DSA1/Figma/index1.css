@@ -1,0 +1,36 @@
+.header{
+color: #FFFFFF;
+display: flex;
+align-items: center;
+}
+.logo{
+color: #FBC315;
+}
+li{
+    color:rgb(35, 150, 150);
+   list-style: none;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
+th{ 
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+color: rgb(169, 158, 158);
+text-align: center;
+}
+tr{
+    display: flex;
+    
+    gap: 9rem;
+}
+td{
+    text-align:center;
+}

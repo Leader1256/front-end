@@ -1,0 +1,67 @@
+/* this is element selector */
+/* div{
+    background-color: bisque;
+}
+
+/* element selector 
+p{
+    color: blueviolet;
+}
+
+/* combination selector 
+div,p{
+    font-size: 23px;
+}
+
+/* global selector :- define by '*'      
+*{
+     background-color: azure;
+}
+
+/* decendent selector 
+div p{
+    background-color: violet;
+} */
+
+/* pseudo element selector 
+1. ::before
+2. ::after
+3. ::first-letter
+4. ::first-line
+5. ::selection
+*/
+/* id selector */
+#p::before{
+   content:"this text before p tag";
+   font-size: 25px;
+}
+/* class selector */
+.p::first-letter{
+    
+    background-color: pink;
+ }
+ .para::first-line{
+    background-color: red;
+ }
+
+ #last::selection{
+    background-color: yellow;
+ }
+
+ /* psuedo selector :-it selector or effect element uder div tag having those who p */
+ div>p{
+    background-color: blueviolet;
+ }
+
+  /* psuedo selector :-it selector or effect element outside div tag having those who p */
+ div~p{
+    background-color: aqua;
+ }
+
+/* adjacent selector :- this selector effect only adjacent element of div  */
+div+p{
+    border: 2px solid red;
+}
+div:hover{
+    background-color: rgb(212, 136, 29);
+}
